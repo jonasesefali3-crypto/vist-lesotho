@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+	<header>
+		<div id="head">
+			<div id="logo"><h1>Visit <h1 style="color:yellow;">Lesotho</h1></h1></div>
+			<div id="links"><a href="home.html"><button>home</button></a><a href="about.html"><button>about</button></a><a href="services.html"><button>services</button></a><a href="contact.html"><button>contact</button></a><button id="mode" onclick="come()">chage mode</button>
+		</div>
+		</div>
+	</header>
+
+	<div id="hide">
+
+	<div id="message2" style="text-transform: uppercase; width: auto;">book your place</div>
+
+  <div id="fill">
+ 		<div class="table">
+			<table border="1">
+			<tr>
+				<th class="left">activities</th>
+				<th>places</th>
+				<th>cost</th>
+				<th class="right">apply</th>
+			</tr>
+			<tr>
+				<td>
+					<h4 style="color: green;text-decoration: underline; text-transform: uppercase;">ice skying</h4>
+					<p>skade your way down the hills of afriskie in Lesotho</p>
+				</td>
+				<td>melosi lodge</td>
+				<td>M350.00</td>
+				<td><button id="button" onclick="book()">book now</button></td>
+
+			</tr>
+			<tr>
+				<td>
+					<h4 style="color: green;text-decoration: underline; text-transform: uppercase;">rock climbing</h4>
+					<p>experience more adventurous activities..</p>
+				</td>
+				<td>bokong guest house</td>
+				<td>M650.00</td>
+				<td><button id="butto" onclick="book()">book now</button></td>
+			</tr>
+			<tr>
+				<td>
+					<h4 style="color: green;text-decoration: underline; text-transform: uppercase;">boad riding</h4>
+					<p>explore the rivers and dams found in Lesotho..</p>
+				</td>
+				<td>katse dam</td>
+				<td>M550.00</td>
+				<td><button id="butt" onclick="book()">book now</button></td>
+
+			</tr>
+			<tr>
+				<td>
+					<h4 style="color: green;text-decoration: underline; text-transform: uppercase;">waterfall tour</h4>
+					<p>Hosting an event at Maletsunyane water fall..</p>
+				</td>
+				<td>maletsunyane water fall</td>
+				<td>M500.00</td>
+				<td><button id="but" onclick="book()">book now</button></td>
+
+			</tr>
+
+
+
+		</table>
+		</div>
+			<div id="secret" onmouseover="mouseon()" onmouseout="mouseoff()">
+				<div id="secret1">
+				<h2 style="font-weight: bold;">explore the world full of secrets</h2>
+				<p>the land full of mistories and unbrocken peace<br> amaizing land scapes, road structures and many more<br></p>
+				<h3 id="message1">click the button below to explore activities found</h3>
+				<button id="select" onclick="view()">click me🥹</button>
+			</div>
+				<div id="gallary">
+					<section class="activities">
+						<article>
+							<a href="images (8).jpg"><img src="images (8).jpg"height="200px" width="200px"></a>
+						</article>
+						<article>
+							<a href="images (10).jpg"><img src="images (10).jpg"height="200px" width="200px"></a>
+						</article>
+						<article>
+							<a href="images (13).jpg"><img src="images (13).jpg"height="200px" width="200px"></a>
+						</article>
+						<article>
+							<a href="images (17).jpg"><img src="images (17).jpg"height="200px" width="200px"></a>
+						</article>
+						<article>
+							<a href="images (3).jpg"><img src="images (3).jpg"height="200px" width="200px"></a>
+						</article>
+						<article>
+							<a href="images (16).jpg"><img src="images (16).jpg"height="200px" width="200px"></a>
+						</article>
+						<article>
+							<a href="images (24).jpg"><img src="images (24).jpg"height="200px" width="200px"></a>
+						</article>
+						<article>
+							<a href="images (25).jpg"><img src="images (25).jpg"height="200px" width="200px"></a>
+						</article>
+						<article>
+							<a href="images (23).jpg"><img src="images (23).jpg"height="200px" width="200px"></a>
+						</article>
+						<article>
+							<a href="images (21).jpg"><img src="images (21).jpg"height="200px" width="200px"></a>
+						</article>
+						<article>
+							<a href="images (22).jpg"><img src="images (22).jpg"height="200px" width="200px"></a>
+						</article>
+					</section>
+
+
+					<section class="activities">
+						<article>
+							<a href="download.webp"><img src="download.webp"height="200px" width="200px"></a>
+						</article>	
+						<article>
+							<a href="download (1).webp"><img src="download (1).webp"height="200px" width="200px"></a>
+						</article>
+						<article>
+							<a href="download (2).webp"><img src="download (2).webp"height="200px" width="200px"></a>
+						</article>	
+						<article>
+							<a href="OIP.webp"><img src="OIP.webp"height="200px" width="200px"></a>
+						</article>	
+						<article>
+							<a href="OIP (1).webp"><img src="OIP (1).webp"height="200px" width="200px"></a>
+						</article>	
+						<article>
+							<a href="OIP (2).webp"><img src="OIP (2).webp"height="200px" width="200px"></a>
+						</article>	
+						<article>
+							<a href="OIP (3).webp"><img src="OIP (3).webp"height="200px" width="200px"></a>
+						</article>	
+						<article>
+							<a href="OIP (4).webp"><img src="OIP (4).webp"height="200px" width="200px"></a>
+						</article>	
+						<article>
+							<a href="OIP (5).webp"><img src="OIP (5).webp"height="200px" width="200px">
+							</a></article>	
+						<article>
+							<a href="OIP (6).webp"><img src="OIP (6).webp"height="200px" width="200px"></a>
+						</article>
+					</section>
+
+
+
+					<section class="activities">
+						<article>
+							<a href="OIP (7).webp"><img src="OIP (7).webp"height="200px" width="200px"></a>
+						</article>	
+						<article>
+							<a href="OIP (8).webp"><img src="OIP (8).webp"height="200px" width="200px"></a>
+						</article>	
+						<article>
+							<a href="OIP (9).webp"><img src="OIP (9).webp"height="200px" width="200px"></a>
+						</article>	
+						<article>
+							<a href="OIP (10).webp"><img src="OIP (10).webp"height="200px" width="200px"></a>
+						</article>	
+						<article>
+							<a href="OIP (11).webp"><img src="OIP (11).webp"height="200px" width="200px"></a>
+						</article>	
+						<article>
+							<a href="OIP (12).webp"><img src="OIP (12).webp"height="200px" width="200px"></a>
+						</article>
+						<article>
+							<a href="OIP (13).webp"><img src="OIP (13).webp"height="200px" width="200px"></a>
+						</article>	
+						<article>
+							<a href="OIP (14).webp"><img src="OIP (14).webp"height="200px" width="200px"></a>
+						</article>	
+						<article>
+							<a href="OIP (15).webp"><img src="OIP (15).webp"height="200px" width="200px"></a>
+						</article>	
+						<article>
+							<a href="download (3).webp"><img src="download (3).webp"height="200px" width="200px"></a>
+						</article>	
+					</section>
+
+
+
+					<section class="activities">
+						<article>
+							<a href="OIP (16).webp"><img src="OIP (16).webp"height="200px" width="200px"></a>
+						</article>	
+						<article>
+							<a href="OIP (17).webp"><img src="OIP (17).webp"height="200px" width="200px"></a>
+						</article>	
+						<article>
+							<a href="OIP (18).webp"><img src="OIP (18).webp"height="200px" width="200px"></a>
+						</article>	
+						<article>
+							<a href="OIP (19).webp"><img src="OIP (19).webp"height="200px" width="200px"></a>
+						</article>	
+						<article>
+							<a href="OIP (20).webp"><img src="OIP (20).webp"height="200px" width="200px"></a>
+						</article>	
+						<article>
+							<a href="OIP (21).webp"><img src="OIP (21).webp"height="200px" width="200px"></a>
+						</article>
+						<article><a href="OIP (22).webp"><img src="OIP (22).webp"height="200px" width="200px"></a>
+						</article>	
+						<article>
+							<a href="OIP (23).webp"><img src="OIP (23).webp"height="200px" width="200px"></a>
+						</article>	
+						<article>
+							<a href="download (4).webp"><img src="download (4).webp"height="200px" width="200px"></a>
+						</article>
+						<article>
+							<a href="download (5).webp"><img src="download (5).webp"height="200px" width="200px"></a>
+						</article>
+					</section>
+
+
+
+					<section class="activities">
+						<article>
+							<a href="OIP (24).webp"><img src="OIP (24).webp"height="200px" width="200px"></a>
+						</article>	
+						<article>
+							<a href="OIP (25).webp"><img src="OIP (25).webp"height="200px" width="200px"></a>
+						</article>	
+						<article>
+							<a href="OIP (26).webp"><img src="OIP (26).webp"height="200px" width="200px"></a>
+						</article>	
+						<article>
+							<a href="OIP (27).webp"><img src="OIP (27).webp"height="200px" width="200px"></a>
+						</article>	
+						<article>
+							<a href="OIP (28).webp"><img src="OIP (28).webp"height="200px" width="200px"></a>
+						</article>	
+						<article>
+							<a href="OIP (29).webp"><img src="OIP (29).webp"height="200px" width="200px"></a>
+						</article>
+						<article>
+							<a href="OIP (30).webp"><img src="OIP (30).webp"height="200px" width="200px"></a>
+						</article>	
+						<article>
+							<a href="OIP (31).webp"><img src="OIP (31).webp"height="200px" width="200px"></a>
+						</article>
+						<article>
+							<a href="download (6).webp"><img src="download (6).webp"height="200px" width="200px"></a>
+						</article>
+						<article>
+							<a href="download (7).webp"><img src="download (7).webp"height="200px" width="200px"></a>
+						</article>
+					</section>
+				</div>
+			</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div id="boot" class="col-sm-8">
+				<h1 style="color:red; text-decoration: double underline; text-transform: uppercase; font-weight: bolder;">Get in touch with us</h1>
+				<p>we are always available on internet, phone calls, and emails.<br> If you want to know more about the company or anything about tourists attractions<br> in Lesotho<br>we are there to help.</p>
+			</div>
+			<div id="strap" class="col-sm-4">
+				<h1 style="color:greenyellow; text-transform: uppercase; font-weight: bolder;">explore places to visit</h1>
+				<button onclick="explore()" style="background: yellow;color: red; height: 40px; border: none; border-radius: 20px;">images</button>
+			</div>
+		</div>		
+	</div>
+</div>
+	<div id="images" style="display: none; border-top-left-radius: 20px; border-top-right-radius: 20px;">
+		<div class="slider">
+		  <button id="prev" style="background:yellow; font-weight: bold; color: blue; height: 30px; width: 80px; border: none;">❮ Prev</button>
+		  <img id="slide" src="images.jpg" width="100%">
+		  <button id="next" style="background:yellow; font-weight: bold; color: blue; height: 30px; width: 80px; border: none;">Next ❯</button>
+
+		  <div style="display:grid; grid-template-columns: 1fr 1fr;">
+		  	<div>
+		  	<h3 style="color:rgba(0, 0, 255, 1.0);">imagen being in a place like this</h3>
+		  	<p>some of the million reasons why you should be with us <br> across our country to guide and give you the<br> best exploration tour ever</p>
+		  </div>
+		  <div>
+		  	<h3>don't hesitate to book your tour</h3>
+		  	<button id="bu" onclick="booking()" style="color:black;">book your tour</button>
+		  </div>
+		  </div>
+		</div>
+	</div>
+
+	<script>
+
+		function view(){
+			let gallary = document.getElementById('gallary');
+			let activities = document.getElementsByClassName('activities')[0];
+			let table = document.getElementsByClassName('table')[0];
+			let message2 = document.getElementById('message2');
+			let container = document.getElementsByClassName('container')[0];
+			activities.style.display = "grid";
+			activities.style.gridTemplateColumns = "1fr";
+			gallary.style.display = "grid";
+			gallary.style.gridTemplateColumns = "1fr 1fr 1fr 1fr";
+			gallary.style.padding = "20px";
+			table.style.display = "none";
+			message2.style.display = "none";
+			container.style.display = "none";
+		}
+
+
+		function mouseon() {
+			let secret = document.getElementById('secret');
+			let message1 = document.getElementById('message1');
+			message1.innerHTML = "hey👋🏿! explore with us.";
+			message1.style.fontsize = "25px";
+			message1.style.fontweight = "bold";
+			message1.style.color = "blue";
+		}
+		function mouseoff() {
+			let secret = document.getElementById('secret');
+			let message1 = document.getElementById('message1');
+			secret.style.transform = "scale(1)";
+			secret.style.height = "auto";
+			secret.style.width = "auto";
+			message1.innerHTML = "click the button below to explore activities found";
+			message1.style.fontsize = "10px";
+			message1.style.fontweight = "bold";
+			message1.style.color = "black";
+		}
+
+		function explore() {
+			document.getElementById('hide').style.display = "none";
+			document.getElementById('images').style.display = "block";
+			document.getElementById('images').style.background = "linear-gradient(rgba(0,0,1,0.6),rgba(255,255,255,0.6))";
+
+		}
+
+		 document.getElementById('button').addEventListener('click', function() {
+    window.location.href = "contact.html";
+  });
+		 document.getElementById('butto').addEventListener('click', function() {
+    window.location.href = "contact.html";
+  });
+		 document.getElementById('butt').addEventListener('click', function() {
+    window.location.href = "contact.html";
+  });
+		 document.getElementById('but').addEventListener('click', function() {
+    window.location.href = "contact.html";
+  });
+		 document.getElementById('bu').addEventListener('click', function() {
+    window.location.href = "contact.html";
+  });
+
+
+  let images = ["imags.jpg", "images (1).jpg", "images (2).jpg", "images (3).jpg", "images (4).jpg", "images (5).jpg", "images (6).jpg", "images (7).jpg", "images (8).jpg", "images (9).jpg", "images (10).jpg", "images (11).jpg", "images (12).jpg", "images (13).jpg", "images (14).jpg", "images (15).jpg", "images (16).jpg", "images (17).jpg", "images (18).jpg", "images (19).jpg", "images (20).jpg", "images (21).jpg", "images (22).jpg", "images (23).jpg", "images (24).jpg", "images (25).jpg", "OIP.webp", "OIP (1).webp", "OIP (2).webp", "OIP (3).webp", "OIP (4).webp", "OIP (5).webp", "OIP (6).webp", "OIP (7).webp", "OIP (8).webp", "OIP (9).webp", "OIP (10).webp", "OIP (11).webp", "OIP (12).webp", "OIP (13).webp", "OIP (14).webp", "OIP (15).webp", "OIP (16).webp", "OIP (17).webp", "OIP (18).webp", "OIP (19).webp", "OIP (20).webp", "OIP (21).webp", "OIP (22).webp", "OIP (23).webp", "OIP (24).webp", "OIP (25).webp", "OIP (26).webp", "OIP (27).webp", "OIP (28).webp", "OIP (29).webp", "OIP (30).webp", "OIP (31).webp", "OIP (32).webp", "download.webp", "download (1).webp", "download (2).webp", "download (3).webp", "download (4).webp", "download (5).webp"];
+  let current = 0;
+  let slide = document.getElementById("slide");
+
+  document.getElementById("next").onclick = function(){
+    current++;
+    if(current >= images.length){ current = 0; } // loop back to first
+    slide.src = images[current];
+  }
+
+  document.getElementById("prev").onclick = function(){
+    current--;
+    if(current < 0){ current = images.length - 1; } // loop to last
+    slide.src = images[current];
+  }
+
+  //mode changing
+
+const toggleBtn = document.getElementById('mode');
+const body = document.body;
+
+// Check for current mode
+if (localStorage.getItem('theme') === 'dark') {
+  body.classList.add('dark');
+  toggleBtn.textContent = 'Light';
+}
+
+//  change mode
+toggleBtn.addEventListener('click', () => {
+  body.classList.toggle('dark');
+
+  if (body.classList.contains('dark')) {
+    localStorage.setItem('theme', 'dark');
+    toggleBtn.textContent = 'Light mode';
+  } else {
+    localStorage.setItem('theme', 'light');
+    toggleBtn.textContent = 'Dark mode';
+  }
+});
+
+
+
+	</script>
+</body>
+<footer><p>@2026 VisitLesotho | Tourist's Home Of Adventur | Lesotho Services</p></footer>
+
+</html>
