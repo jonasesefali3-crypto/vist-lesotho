@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<div id="head">
+			<div id="logo"><h1>Visit <h1 style="color:yellow;">Lesotho</h1></h1></div>
+			<div id="links"><a href="home.html"><button>home</button></a><a href="about.html"><button>about</button></a><a href="services.html"><button>services</button></a><a href="contact.html"><button>contact</button></a><button id="mode" onclick="come()">chage mode</button>
+		</div>
+		</div>
+	</header>
+
+	<div id="body">
+		<div id="welcome">
+			<h1 class="a">Welcome to Lesotho</h1>
+			<h3>Our culture beyond the sky</h3>
+			<p>Experience one of the interesting areas in Africa</p>
+			<button id="exploration" style="color:black; font-weight: bold;">explore ></button>
+		</div>
+		<h2 style="color: blue; width: auto;">Top trending visits</h2>
+		<div id="explore">
+			<div class="places">
+				<img src="kingdom.jpg">
+				<h2>Bokong</h2>
+				<p>explore the interesting view in Bokong</p>
+			</div>
+			<div class="places">
+				<img src="images (24).jpg">
+				<h2>Thaba-bosiu</h2>
+				<p>Historical areas found and interestingstories about the Great King Moshoeshoe1 at Thaba-Bosiu </p>
+			</div>
+			<div class="places">
+				<img src="images (5).jpg">
+				<h2>Katse</h2>
+				<p>Katse tour services is hosting an entertaining event at Katse dam,explore the entertaining ectivities with us this December.</p>
+			</div>
+			<div class="places">
+				<img src="images (3).jpg">
+				<h2>Matsieng</h2>
+				<p>Explore the educational stories about the Basotho culture in Matsieng </p>
+			</div>
+
+		</div>
+	</div>
+
+<script>
+const toggleBtn = document.getElementById('mode');
+const body = document.body;
+
+// Check for current mode
+if (localStorage.getItem('theme') === 'dark') {
+  body.classList.add('dark');
+  toggleBtn.textContent = 'Light';
+}
+
+//  change mode
+toggleBtn.addEventListener('click', () => {
+  body.classList.toggle('dark');
+
+  if (body.classList.contains('dark')) {
+    localStorage.setItem('theme', 'dark');
+    toggleBtn.textContent = 'Light mode';
+  } else {
+    localStorage.setItem('theme', 'light');
+    toggleBtn.textContent = 'Dark mode';
+  }
+});
+
+//explore button
+	document.getElementById('exploration').addEventListener('click', function() {
+    window.location.href = "services.html";
+  });
+
+
+</script>
+</body>
+<footer><p>@2026 VisitLesotho | Tourist's Home Of Adventur | Lesotho Services</p></footer>
+</html>

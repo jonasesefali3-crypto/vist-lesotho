@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<div id="head">
+			<div id="logo"><h1>Visit <h1 style="color:yellow;">Lesotho</h1></h1></div>
+			<div id="links"><a href="home.html"><button>home</button></a><a href="about.html"><button>about</button></a><a href="services.html"><button>services</button></a><a href="contact.html"><button>contact</button></a><button id="mode" onclick="come()">chage mode</button>
+		</div>
+		</div>
+	</header>
+
+	<div id="online">
+
+	<div class="apply">
+		<div id="hidden" style="display:flex;flex-direction: column; text-align: left;margin: 10px;">
+			<h2 style="text-decoration:underline;">contact us here</h2>
+			<p style="font-size: 20px;"><img src="OIP (4).webp" height="20px" width="20px"> 63798126</p>
+			<p style="font-size: 20px;"><img src="R.jpg" height="20px" width="20px"> jonasesefali3@gmail.com</p>
+			<a href="home.html" style="text-decoration:none;"><img src="chrome.png " height="20px" width="20px">https://www.VISITLESOTHO.%20//tourist%20attraction</a>
+			<p><img src="location.png" height="20px" width="20px">Maseru,moshoeshoe1 PO.BOX 330</p>
+			
+				<h1 style="text-decoration:underline;">working hours</h1>
+			<p style="font-size:14px;">	
+				monday to friday 2400hrs<br>
+				saturday to sunday 0700hrs - 2000hrs<br>
+				on holidays [closed]<br>
+			</p>
+		</div>
+		<div id="cont">
+			<label>enter your name</label>
+			<input type="text" id="name" placeholder="e.g jonase sefali " required><br>
+
+			<label>enter your email acount</label>
+			<input type="email" id="emails" placeholder="e.g example@gmail.com" required><br>
+
+			<label>enter destination</label>
+			<input type="text" id="destination" placeholder="e.g maletsunyane fall" required><br>
+
+			<label>rooms</label>
+			<input type="number" id="rooms" required>
+
+				<button onclick="send()">submit</button>
+
+			
+				<div id="loading" style="display: none;">
+				  <div class="spinner"></div>
+				  <p>Loading... Please wait...</p>
+				</div>
+				<p id="confirmation" style="text-decoration: overline; font-size: 30px; color: blue;"></p>
+
+		</div>
+
+	</div>
+
+	<div id="lone"><h1>trending events to explore</h1></div>
+		<div class="top-bottom">
+			<div id="bottom1">
+				<img src="OIP (39).webp">
+				<h3>trending event available this december</h3>
+				<p>
+					book your place with us to explore<br>the exiting landscapes and snow slidin<br>in lesotho on 25th-29th December 2026<br>
+					free food,accupation, and guide.
+				</p>
+				<button id="buttoncard1" onclick="cardbtn()">book</button>
+			</div>
+			<div id="bottom2">
+				<img src="images (22).jpg">
+				<h3>trending event available this december</h3>
+				<p>
+					bookyour place with us to explore the most beutiful view in<br> katse dam throughout Maliba-Mats'o river<br> on 18th-26th December 2026<br>
+					free food,accupation,drinks and guide.
+				</p>
+				<button id="buttoncard1" onclick="cardbtn()">book</button>
+			</div>
+		</div>
+
+		<div class="bottom">
+			<nav>
+				<h2>Quick links</h2>
+				<p><a href="home.html" style="color: blue;font-weight: bold;text-decoration: none;">Home</a></p>
+				<p><a href="about.html" style="color: blue;font-weight: bold;text-decoration: none;">About</a></p>
+				<p><a href="services.html" style="color: blue;font-weight: bold;text-decoration: none;">Services</a></p>
+				<p><a href="contact.html" style="color: blue;font-weight: bold;text-decoration: none;">Contact</a></p>
+
+			</nav>
+			<nav>
+				<h2>security infor</h2>
+				<p>T&Cs Apply<br>all protocols are obbayed <br> sponsord by Lesotho Touristm government<br></p>
+			</nav>
+			<nav>
+				<h2>accounts</h2>
+				<button onclick="sign()" style="border-radius:10px; border: none; background: yellow;color: black;">sign in</button>
+			</nav>
+
+		</div>
+	</div>
+
+	<div id="accound" style="display:none; height: 500px;">
+		<h1 style="text-decoration:underline; font-weight: bold; color: rgba(0, 0, 255, 1.0);">Welcome to VisitLesotho webpage</h1>
+		<h4>enter your accound details to log in</h4>
+		<div id="one">
+			<label>enter google accound</label><br>
+			<input type="text" id="email" placeholder="e.g example@gmail.com" required><button onclick="pass()">next</button><br>
+		</div>
+		<div id="two" style="display:none;">
+			<label>enter password</label><br>
+			<input type="text" id="password" placeholder="e.g fn924hrbf" required><button onclick="passe()">next</button><br>
+		</div>
+		<div id="three" style="display:none;">
+			<label>confirm password</label><br>
+			<input type="text" id="confirm" required><button onclick="login()">login</button><br>
+		</div>
+	</div>
+	<div id="dform" >
+		<nav>
+			<label></label>
+			<input type="text" id="in1" placeholder="e.g katse dam december tour.." required>
+			<label></label>
+			<input type="date" id="in2"placeholder="e.g 26 november 2026">
+			<button onclick="next2()">➡️</button><button id="done" onclick="bdone()">done</button>
+
+		</nav>
+	</div>
+	<script>
+
+		function next2(){
+			let first =   document.getElementById('in1');
+			let second =  document.getElementById('in2');
+			if(first.value.trim() == ""){
+				alert("please fill out this section first!");
+				return;
+			}
+			in1.style.display = "none";
+			in2.style.display = "block";
+		}
+
+		function bdone(){
+			let first =   document.getElementById('in1').value;
+			let second =  document.getElementById('in2').value;
+			let account =  document.getElementById('accound');
+			let online = document.getElementById('online'); 
+			let apply = document.getElementById('dform');
+
+			if (first.trim() == "" || second.trim() == "") {
+				alert("please fill out the form first!");
+				return;
+			}else{
+				alert("request submitted! wait for a short confirmation message.")
+			}
+			apply.style.display = "none";
+			account.style.display = "block";
+			online.style.display = "block";
+
+
+
+		}
+
+
+		function cardbtn(){
+			let first =   document.getElementById('in1');
+			let second =  document.getElementById('in2');
+			let account =  document.getElementById('accound');
+			let online = document.getElementById('online'); 
+			let apply = document.getElementById('dform');
+			let body = document.body;
+			body.style.height = "auto";
+			in1.style.display = "block";
+			in2.style.display = "none";
+			account.style.display = "none";
+			online.style.display = "none";
+			apply.style.display = "flex"
+			apply.style.flexDirection = "row";
+			apply.style.justiFycontent = "center";
+			apply.style.alignItems = "center";
+			apply.style.textAlign = "center";
+			apply.style.padding = "";
+			apply.style.margin = "10%";
+		}
+
+		function sign(){
+			document.getElementById('online').style.display = "none";
+			document.getElementById('accound').style.display = "block";
+		}
+
+		function pass(){
+	 		let first = document.getElementById('email').value;
+
+			if(first.trim() == "" ){
+				alert("please fill in this section!");
+				return;
+			}
+			document.getElementById('one').style.display = "none";
+			document.getElementById('two').style.display = "block";
+
+		}
+
+		function passe(){
+			document.getElementById('two').style.display = "none";
+			document.getElementById('three').style.display = "block";
+
+		}
+//login button
+		function login(){
+			let password = document.getElementById('password').value;
+			let confirm = document.getElementById('confirm').value;
+
+		if (confirm != password) {
+			alert("password does not match!");
+			return;
+		}
+		alert("access confirmed!");
+		document.getElementById('confirmation').innerHTML = "weldone "+document.getElementById('email').value+", you have successfully logged in our webside";
+		document.getElementById('accound').style.display = "none";
+		document.getElementById('online').style.display = "block";
+
+		}
+//loading section
+		function send(){
+		  document.getElementById('loading').style.display = 'block';
+		  document.getElementById('confirmation').innerHTML = "";
+
+			  setTimeout(function() {
+			    // 3. HIDE loading, SHOW message!
+			    document.getElementById('loading').style.display = 'none';
+			    document.getElementById('confirmation').innerHTML = "Well done " + document.getElementById('name').value + ", submission succeeded!";
+			  }, 3000);
+		}
+
+	//cards operations
+		document.getElementById('serve').addEventListener('click', function() {
+	    window.location.href = "services.html";
+			 	document.getElementById('images').style.display = "block";
+	  });
+
+		document.getElementById('serv').addEventListener('click', function() {
+	    window.location.href = "services.html";
+	  });
+		document.getElementById('ser').addEventListener('click', function() {
+	    window.location.href = "services.html";
+	  });
+
+	//mode changing
+		const toggleBtn = document.getElementById('mode');
+		const body = document.body;
+
+
+		if (localStorage.getItem('theme') === 'dark') {
+		  body.classList.add('dark');
+		  toggleBtn.textContent = 'Light';
+		}
+
+
+		toggleBtn.addEventListener('click', () => {
+		  body.classList.toggle('dark');
+
+	  if (body.classList.contains('dark')) {
+	    localStorage.setItem('theme', 'dark');
+	    toggleBtn.textContent = 'Light mode';
+	  } else {
+	    localStorage.setItem('theme', 'light');
+	    toggleBtn.textContent = 'Dark mode';
+	  }
+		});
+
+	</script>
+
+</body>
+<footer><p>@2026 VisitLesotho | Tourist's Home Of Adventur | Lesotho Services</p></footer>
+
+</html>
